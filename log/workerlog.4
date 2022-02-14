@@ -1,0 +1,32 @@
+/usr/local/lib/python3.8/dist-packages/paddle/distributed/fleet/base/fleet_base.py:864: UserWarning: It is recommended to use DistributedStrategy in fleet.init(). The strategy here is only for compatibility. If the strategy in fleet.distributed_optimizer() is not None, then it will overwrite the DistributedStrategy in fleet.init(), which will take effect in distributed training.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/paddle/fluid/framework.py:744: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  elif dtype == np.bool:
+W0214 01:43:13.522517 751644 device_context.cc:447] Please NOTE: device: 4, GPU Compute Capability: 8.0, Driver API Version: 11.4, Runtime API Version: 11.2
+W0214 01:43:13.525429 751644 device_context.cc:465] device: 4, cuDNN Version: 8.2.
+I0214 01:43:16.794690 751644 gen_comm_id_helper.cc:190] Server listening on: 127.0.0.1:43399 successful.
+W0214 01:43:25.971014 751644 build_strategy.cc:110] Currently, fuse_broadcast_ops only works under Reduce mode.
+I0214 01:43:25.972525 751644 fuse_pass_base.cc:57] ---  detected 2 subgraphs
+I0214 01:43:25.972792 751644 fuse_pass_base.cc:57] ---  detected 2 subgraphs
+W0214 01:43:25.974488 751644 fuse_all_reduce_op_pass.cc:76] Find all_reduce operators: 6. To make the speed faster, some all_reduce ops are fused during training, after fusion, the number of all_reduce ops is 1.
+Loading parameters from ./test_allreduce_mode/paddle_example...
+I0214 01:43:26.144680 751644 fuse_pass_base.cc:57] ---  detected 2 subgraphs
+Top_1: [0.125] Top_5: [0.5390625]
+Top_1 (Non-reduced): [0.15625] Top_5 (Non-reduced): [0.59375]
+/usr/local/lib/python3.8/dist-packages/paddle/distributed/fleet/base/fleet_base.py:864: UserWarning: It is recommended to use DistributedStrategy in fleet.init(). The strategy here is only for compatibility. If the strategy in fleet.distributed_optimizer() is not None, then it will overwrite the DistributedStrategy in fleet.init(), which will take effect in distributed training.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/paddle/fluid/framework.py:744: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  elif dtype == np.bool:
+W0214 01:43:36.931771 751986 device_context.cc:447] Please NOTE: device: 4, GPU Compute Capability: 8.0, Driver API Version: 11.4, Runtime API Version: 11.2
+W0214 01:43:36.934960 751986 device_context.cc:465] device: 4, cuDNN Version: 8.2.
+I0214 01:43:40.244601 751986 gen_comm_id_helper.cc:190] Server listening on: 127.0.0.1:58997 successful.
+W0214 01:43:49.677680 751986 build_strategy.cc:110] Currently, fuse_broadcast_ops only works under Reduce mode.
+I0214 01:43:49.679172 751986 fuse_pass_base.cc:57] ---  detected 2 subgraphs
+I0214 01:43:49.679430 751986 fuse_pass_base.cc:57] ---  detected 2 subgraphs
+W0214 01:43:49.681149 751986 fuse_all_reduce_op_pass.cc:76] Find all_reduce operators: 6. To make the speed faster, some all_reduce ops are fused during training, after fusion, the number of all_reduce ops is 1.
+Loading parameters from ./test_allreduce_mode/paddle_example...
+I0214 01:43:50.820449 751986 fuse_pass_base.cc:57] ---  detected 2 subgraphs
+Top_1: [0.1796875] Top_5: [0.484375]
+Top_1 (Non-reduced): [0.15625] Top_5 (Non-reduced): [0.59375]
