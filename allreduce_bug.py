@@ -190,7 +190,7 @@ label_data = np.random.randint(0, LABEL-1, (64, 1)).astype("int64")
 
 exe.run(program=main_prog,
         feed={"input_": input_data, "label_": label_data})
-load_params(main_prog, "./test_allreduce_mode/paddle_example")
+load_params(main_prog, "./test_allreduce_model/paddle_example")
 
 acc_top1_reduced, acc_top5_reduced, acc_top1_nonreduced, acc_top5_nonreduced = exe.run(program=compiled_eval_prog,
         feed={"input_": input_data, "label_": label_data},
