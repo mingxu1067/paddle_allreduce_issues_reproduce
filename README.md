@@ -26,6 +26,7 @@ Top_1 (Non-reduced): [0.09375] Top_5 (Non-reduced): [0.53125]
 
 #### Command to run
 ```Bash
+$ pip3 install paddlepaddle-gpu==2.2.0.post112 -f https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html
 $ git clone https://github.com/mingxu1067/paddle_allreduce_issues_reproduce.git
 $ cd paddle_allreduce_issues_reproduce
 $ python3 -m paddle.distributed.launch --gpus=0,1,2,3,4,5,6,7 allreduce_bug.py
